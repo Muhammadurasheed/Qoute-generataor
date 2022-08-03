@@ -42,8 +42,43 @@ body {
     margin-top: 20px;
 }
 
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    font-size: 1.2rem;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 .3rem rgba(121, 121, 121, .65);
+    border: none;
+    background: #333;
+    color: #fff;
+    padding: .5rem 1.8rem;
+}
+
+button:hover {
+    filter: brightness(120%);
+}
+
+button:active {
+    transform: translate(0, .3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, .65);
+}
+
+.twitter-button:hover {
+    color: #38a1f3;
+}
+.fa-twitter {
+    font-size: 1.5rem;
+}
 
 
+
+/* Media Query: Tablets or smaller */
 @media screen and (max-width: 968px) {
     .quote-container {
         margin: auto 10px;
